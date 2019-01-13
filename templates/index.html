@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Project</title>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        {{ JSGlue.include() }}
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    </head>
+    <body>
+        <h1>{{ text }}</h1>
+        <input id="btn1" type="button" value="Press me"/>
+    </body>
+</html>
